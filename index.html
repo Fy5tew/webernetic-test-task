@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Демо-версия</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js" defer></script>
 </head>
 <body>
     <div class="content-wrapper">
         <div class="info">
             <h1 class="info__header">Демо-версия</h1>
             <p class="info__content">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить</p>
-            <button class="button info__button">
+            <button class="button info__button" id="main-button">
                 <span class="button__text">Попробовать бесплатно</span>
                 <div class="button__icon-wrapper">
                     <img class="button__icon" src="assets/button-arrow.svg" alt="->">
@@ -23,5 +23,24 @@
             <img class="photo__content" src="assets/image.png" />
         </div>
     </div>
+    <dialog class="modal" id="login-modal">
+        <div class="modal__content">
+            <button class="modal__exit-button" id="modal-exit-button">
+                <img src="assets/button-cross.svg" alt="X" />
+            </button>
+            <h1 class="modal__header">Войти в систему</h1>
+            <input class="modal__input" type="text" name="login" placeholder="Email/Телефон">
+            <input class="modal__input" type="password" name="password" placeholder="Пароль">
+            <label class="modal__label">
+                <input class="modal__checkbox" type="checkbox">
+                <span>Запомнить пароль</span>
+            </label>
+            <a class="modal__link" href="#">Восстановить</a>
+            <div class="modal__controls">
+                <button class="modal__button modal__button_primary">Войти</button>
+                <button class="modal__button modal__button_secondary">Зарегестрироваться</button>
+            </div>
+        </div>
+    </dialog>
 </body>
 </html>
