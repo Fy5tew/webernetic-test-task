@@ -20,11 +20,11 @@ body {
   background-color: #EBF0FA;
 }
 .content-wrapper > * {
-  width: 50%;
+  max-width: 50%;
 }
 
 .info {
-  margin-left: 72px;
+  margin: 35px 0 35px 72px;
   max-width: 510px;
 }
 .info > .info__header {
@@ -84,6 +84,69 @@ body {
 }
 .photo > .photo__content {
   width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .info > .info__header {
+    font-size: 26px;
+    line-height: 41.6px;
+  }
+}
+@media (max-width: 1200px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  .content-wrapper > * {
+    max-width: 100%;
+  }
+  .info {
+    margin: 35px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .info {
+    margin: 24px;
+  }
+  .info > .info__header {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .info > .info__content {
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .button {
+    padding: 10px 10px 10px 18px;
+    gap: 32px;
+  }
+  .button > .button__text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .info {
+    margin: 24px 24px 18px 24px;
+  }
+  .info > .info__header {
+    font-size: 17px;
+    line-height: 27.2px;
+  }
+  .info > .info__content {
+    margin-bottom: 18px;
+    font-size: 13px;
+    line-height: 20.8px;
+  }
+  .button {
+    gap: 16px;
+  }
+  .button > .button__text {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
