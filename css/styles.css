@@ -205,6 +205,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  body {
+    margin: 24px;
+  }
   .info {
     margin: 24px;
   }
@@ -227,6 +230,9 @@ body {
   }
 }
 @media (max-width: 375px) {
+  body {
+    margin: 14px 24px;
+  }
   .info {
     margin: 24px 24px 18px 24px;
   }
